@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE table [
+    <!ELEMENT table (student*)>
+    <!ELEMENT student (note*)>
+    <!ELEMENT note (#PCDATA)>
+    
+    <!ATTLIST student name CDATA "">
+    <!ATTLIST note discipline CDATA "">
+]>
+
+<table>
+    <student name="Ivanov">
+        <note discipline="first">3</note>
+        <note discipline="second">3</note>
+        <note discipline="third">5</note>
+    </student>
+    <student name="Petrova">
+        <note discipline="Multi">3</note>
+        <note discipline="UEB">4</note>
+        <note discipline="Graph">5</note>
+        <note discipline="Log">5</note>
+    </student>
+    <student name="Sidorenko">
+        <note discipline="Multi">3</note>
+        <note discipline="UEB">4</note>
+        <note discipline="Graph">5</note>
+        <note discipline="Log">4</note>
+    </student>
+</table>
+

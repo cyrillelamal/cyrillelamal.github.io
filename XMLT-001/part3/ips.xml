@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE descr [
+    <!ELEMENT descr (tmfip, visits, mvisits, ips)>
+    <!ELEMENT tmfip (#PCDATA)>
+    <!ELEMENT visits (windows, linux, macos)>
+    <!ELEMENT windows (#PCDATA)>
+    <!ELEMENT linux (#PCDATA)>
+    <!ELEMENT macos (#PCDATA)>
+    <!ELEMENT mvisits (#PCDATA)>
+    
+    <!ELEMENT ips (ip*)>
+    <!ELEMENT ip EMPTY>
+    <!ATTLIST ip addr CDATA "">
+    <!ATTLIST ip frequency CDATA "">
+]>
+
+<descr>
+    <tmfip>192.168.0.1</tmfip>
+    <visits>
+        <windows>1337</windows>
+        <linux>894</linux>
+        <macos>5.90</macos>
+    </visits>
+    <mvisits>8</mvisits>
+    <ips>
+        <ip addr="here we go again" frequency="2"/>
+    </ips>
+</descr>
+

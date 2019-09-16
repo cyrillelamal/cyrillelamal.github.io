@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE myportfolio [
+    <!ELEMENT myportfolio (mycompetencies)>
+    <!ELEMENT mycompetencies (competency*)>
+    <!ELEMENT competency EMPTY>
+    
+    <!ATTLIST competency in CDATA "">
+    <!ATTLIST competency value CDATA "">
+]>
+
+<myportfolio>
+    <mycompetencies>
+        <competency in="HTML" value="good" />
+        <competency in="CSS" value="rather badly" />
+        <competency in="Python3" value="Lambda-man" />
+        <competency in="Django" value="Backend-monkey" />
+        <competency in="Flask" value="Backend-monkey" />
+        <competency in="SQL" value="CRUD with JOINs" />
+        <competency in="JS" value="&lt;ES5" />
+        <competency in="JQuery" value="40%" />
+        <competency in="Linux" value="Know how to google" />
+        <competency in="Bash" value="Enough" />
+        <competency in="English" value="B1/B2" />
+        <competency in="French" value="C1/C2" />
+    </mycompetencies>
+</myportfolio>
+
