@@ -17,10 +17,10 @@
         <competency in="Django" value="Backend-monkey" />
         <competency in="Flask" value="Backend-monkey" />
         <competency in="SQL" value="CRUD with JOINs" />
-        <competency in="JS" value="&lt;ES5" />
+        <competency in="JS" value="&lt;ES6" />
         <competency in="JQuery" value="40%" />
         <competency in="Linux" value="Know how to google" />
-        <competency in="Bash" value="Enough" />
+        <competency in="Bash" value="Simple scripts" />
         <competency in="English" value="B1/B2" />
         <competency in="French" value="C1/C2" />
     </mycompetencies>
