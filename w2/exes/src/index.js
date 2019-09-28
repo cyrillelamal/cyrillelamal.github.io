@@ -4,7 +4,7 @@ const faker = require('faker');
 
 let pre = document.createElement("pre");
 
-pre.textContent = `${moment("dd:mm:YYYY")}\n`;
+pre.textContent = `${moment().format("dd/mm/YYYY hh:mm:ss")}\n`;
 
 pre.textContent += `${faker.internet.email()}`;
 
