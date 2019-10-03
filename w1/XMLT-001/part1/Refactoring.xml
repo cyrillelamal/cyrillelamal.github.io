@@ -4,7 +4,7 @@
     <!ELEMENT table (student*)>
     <!ELEMENT student (note*)>
     <!ELEMENT note (#PCDATA)>
-    
+
     <!ATTLIST student name CDATA "">
     <!ATTLIST note discipline CDATA "">
 ]>
@@ -28,4 +28,3 @@
         <note discipline="Log">4</note>
     </student>
 </table>
-
