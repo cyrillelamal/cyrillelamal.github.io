@@ -1,0 +1,12 @@
+{
+  "name": "diff2html-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "diff2html-cli": "^4.2.1"
+  },
+  "scripts": {
+    "d2h": "diff2html"
+  }
+}
