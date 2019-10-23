@@ -1,5 +1,3 @@
-(() => console.log('Меня вызвали!'))();
-
-(func) => func();
-
-
+(function outer() {
+    return () => {console.log('Меня вызвали!'); };
+})()();

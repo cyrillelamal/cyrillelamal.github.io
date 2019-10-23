@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Неделя 6</title>
-  <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -10,16 +10,56 @@
 
   <div class="container">
 
-    <h1 style="margin: 1em 0px;">Flow</h1>
+    <h1 style="margin: 1em 0px;">Currying, IIFE, Delays</h1>
 
+    <p>Where are closures?</p>
 
     <div class="jumbotron">
-      <h2 class="display-3">Pauses</h2>
+      <h2 class="display-4">Currying</h2>
       <p class="card-text">
-        <a href="./src/index.js">Script</a>.
+        <a href="./src/curry.js">Currying example.</a>
+      </p>
+      <p>
+      <code>
+      <pre>
+        const partiPow = x => y => y**x;
+
+        const qv = partiPow(2);
+        const cb = partiPow(3);
+
+        console.log(qv(5)); // 25
+        console.log(cb(5)); // 125
+      </pre>
+      </code>
+      </p>
+    </div>
+
+    <div class="jumbotron">
+      <h2 class="display-4">IIFE</h2>
+      <p class="card-text">
+        <a href="./src/left.js">IIFE example.</a>
+      </p>
+      <p>
+      <code>
+      <pre>
+        (function outer() {
+            return () => {console.log('Меня вызвали!'); };
+        })()();
+      </pre>
+      </code>
+      </p>
+    </div>
+
+    <div class="jumbotron">
+      <h2 class="display-4">Delays</h2>
+      <p class="card-text">
+        <a href="./src/index.js">Script.</a>
       </p>
       <p class="card-text">
         <img src="./goss.png" alt="With block">
         <img src="./setTimeout.png" alt="Without block">
       </p>
     </div>
+
+  </div>
+</body>
