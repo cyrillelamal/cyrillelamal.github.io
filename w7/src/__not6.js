@@ -1,20 +1,35 @@
-const https = require('https');
+fetch = require('node-fetch');
 
-const url = 'http://kodaktor.ru/j/ips';
+const url = 'https://kodaktor.ru/j/ips';
 
-https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
-  let data = '';
+fetch(url)
+.then(res => res.json())
+.then(ips => {
+  const frequencies = {};
+  const sortedFrequencies = {};
 
-  // A chunk of data has been recieved.
-  resp.on('data', (chunk) => {
-    data += chunk;
+  // Map frequencies
+  ips.forEach(element => {
+    const ip = element['ip'];  // Used as frequencies object key
+
+    numOfVisits = frequencies[ip];
+    if (numOfVisits == undefined) { frequencies[ip] = 1; }
+    else { frequencies[ip]++; }
   });
 
-  // The whole response has been received. Print out the result.
-  resp.on('end', () => {
-    console.log(JSON.parse(data));
-  });
+  // Sort them
+  const keys = Object.keys(frequencies);
+  keys.sort((lf, rf) => frequencies[lf] - frequencies[rf])
+  .reverse()
+  .forEach(key => sortedFrequencies[key] = frequencies[key]);
 
-}).on("error", (err) => {
-  console.log("Error: " + err.message);
+  // a :: Number of different ips
+  const numOfDiff = keys.length;
+  // b  :: Number of ips with only one visit
+  let ones = 0;
+  keys.forEach(key => {
+    if (frequencies[key] == 1) { ones++; }
+  })
+  // c :: Max frequence
+  const maxFrequence = frequencies[keys[0]];
 });
