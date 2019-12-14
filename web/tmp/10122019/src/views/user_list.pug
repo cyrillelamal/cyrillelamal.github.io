@@ -1,0 +1,13 @@
+html
+    body
+        h1 List of users from Kodaktor database
+        table
+            thead
+                tr
+                    th Login
+                    th Password
+            tbody
+                for user in users
+                    tr
+                        td= user.login
+                        td= user.password
