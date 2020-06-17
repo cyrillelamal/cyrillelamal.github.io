@@ -11,7 +11,7 @@
 7. [Восьмая неделя (Async, Curring)](./web/w8/week8.html)
 7. [Девятая неделя (Destructuring)](./web/w9/week9.html)
 
-[Функциональное программирование на JavaScript](https://docs.google.com/presentation/d/1Tst-vy4mSsGSoqRFrgXTpaqGBIIY4vLyC3DYTUT4WAw/edit?usp=sharing)
-[Инструменты веб-разработчика в браузере](https://docs.google.com/presentation/d/1le2cyN4ZgQgu95AJWsC6a3CeV453xotGZmJq2sNG564/edit?usp=sharing)
+* [Функциональное программирование на JavaScript](https://docs.google.com/presentation/d/1Tst-vy4mSsGSoqRFrgXTpaqGBIIY4vLyC3DYTUT4WAw/edit?usp=sharing)
+* [Инструменты веб-разработчика в браузере](https://docs.google.com/presentation/d/1le2cyN4ZgQgu95AJWsC6a3CeV453xotGZmJq2sNG564/edit?usp=sharing)
 
 > [Особый, уличный УЕБ](https://github.com/cyrillelamal/RichInternetApplications)
